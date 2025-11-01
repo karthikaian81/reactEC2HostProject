@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <h2>KARTHIK CI CD PIPELINE LEARNINGS</h2>
+      <h6>Last Changes Deployed on ${Date.now()}</h6>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

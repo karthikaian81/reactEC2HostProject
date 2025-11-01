@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h2>KARTHIK CI CD PIPELINE LEARNINGS New Changes</h2>
+      <h2>KARTHIK CI CD PIPELINE LEARNINGS 1</h2>
       <h6>Last Changes Deployed on ${new Date().toLocaleString()}</h6>
       <div>
         <a href="https://vite.dev" target="_blank">

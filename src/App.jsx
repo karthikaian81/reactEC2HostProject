@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <h2>KARTHIK CI CD PIPELINE LEARNINGS</h2>
+      <h2>KARTHIK CI CD PIPELINE LEARNINGS 1</h2>
       <h6>Current Time {time}</h6>
       <div>
         <a href="https://vite.dev" target="_blank">

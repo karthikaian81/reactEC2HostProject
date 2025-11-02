@@ -1,15 +1,21 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [time,setTime] = useState(new Date().toLocaleString())
+
+  useEffect(() => {
+    const updateTimeonEachSecond = setInterval(() => { setTime(new Date().toLocaleString())},1000)
+    return () => clearInterval(updateTimeonEachSecond);
+  },[])
 
   return (
     <>
       <h2>KARTHIK CI CD PIPELINE LEARNINGS</h2>
-      <h6>Last Changes Deployed on {new Date().toLocaleString()}</h6>
+      <h6>Current Time {time}</h6>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
